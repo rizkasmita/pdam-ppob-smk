@@ -1,0 +1,7 @@
+Route::get('/usages', [UsageController::class, 'index']);
+Route::get('/usages/check', [UsageController::class, 'check']);
+Route::get('/usages/create', [UsageController::class, 'create']);
+Route::get('/usages/{usage:customer_id}', [UsageController::class, 'show']);
+Route::post('/usages', [UsageController::class, 'store']);
+Route::get('/usages/{usage}/edit', [UsageController::class, 'edit']);
+Route::put('/usages/{usage}', [UsageController::class, 'update']);
